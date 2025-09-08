@@ -1,0 +1,1591 @@
+2023-12-01 10:03:02,815 - root - INFO - Initiating present weather
+2023-12-01 10:03:02,815 - root - INFO - Collecting ndf data at 10 UTC
+2023-12-01 10:03:02,818 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:02,969 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-aceh.csv HTTP/1.1" 200 584207
+2023-12-01 10:03:03,783 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:03,783 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:03,802 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:03,802 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:03,804 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:03,804 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:03,804 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:03,804 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:03,804 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:03,805 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:03,867 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:03,867 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:03,868 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:03,868 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:03,916 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:03,983 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:03,984 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:04,396 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:04,396 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:04,439 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:04,440 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:04,444 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:04,451 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:04,451 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-aceh.csv', 'wb')
+2023-12-01 10:03:04,455 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-aceh.csv', 'wb') -> 00000000
+2023-12-01 10:03:04,480 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:04,487 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-aceh.csv')
+2023-12-01 10:03:04,490 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:04,490 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:04,491 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:04,496 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sumut.csv HTTP/1.1" 200 788561
+2023-12-01 10:03:04,590 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:05,190 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:05,190 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:05,209 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:05,209 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:05,212 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:05,213 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:05,273 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:05,273 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:05,274 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:05,274 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:05,320 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:05,387 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:05,387 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:05,515 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:05,515 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:05,559 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:05,559 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:05,562 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:05,572 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:05,572 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumut.csv', 'wb')
+2023-12-01 10:03:05,575 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumut.csv', 'wb') -> 00000000
+2023-12-01 10:03:05,610 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:05,615 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sumut.csv')
+2023-12-01 10:03:05,617 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:05,618 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:05,619 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:05,675 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sumbar.csv HTTP/1.1" 200 371515
+2023-12-01 10:03:05,718 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:06,011 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:06,011 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:06,030 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:06,030 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:06,032 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:06,033 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:06,093 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:06,093 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:06,093 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:06,093 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:06,141 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:06,209 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:06,209 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:06,334 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:06,334 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:06,379 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:06,379 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:06,383 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:06,394 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:06,394 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumbar.csv', 'wb')
+2023-12-01 10:03:06,397 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumbar.csv', 'wb') -> 00000000
+2023-12-01 10:03:06,416 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:06,420 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sumbar.csv')
+2023-12-01 10:03:06,423 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:06,423 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:06,424 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:06,426 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-riau.csv HTTP/1.1" 200 304921
+2023-12-01 10:03:06,523 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:06,689 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:06,690 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:06,708 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:06,708 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:06,711 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:06,711 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:06,711 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:06,711 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:06,711 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:06,712 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:06,772 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:06,773 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:06,773 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:06,773 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:06,821 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:06,889 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:06,890 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:07,012 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:07,013 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:07,055 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:07,055 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:07,059 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:07,070 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:07,070 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-riau.csv', 'wb')
+2023-12-01 10:03:07,073 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-riau.csv', 'wb') -> 00000000
+2023-12-01 10:03:07,090 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:07,095 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-riau.csv')
+2023-12-01 10:03:07,098 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:07,098 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:07,100 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:07,102 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kepriau.csv HTTP/1.1" 200 141323
+2023-12-01 10:03:07,198 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:07,217 - paramiko.transport - DEBUG - starting thread (client mode): 0xd1aff3a0
+2023-12-01 10:03:07,217 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:07,234 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:07,234 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:07,237 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:07,237 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:07,238 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:07,298 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:07,298 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:07,298 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:07,298 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:07,344 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:07,412 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:07,412 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:07,534 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:07,535 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:07,579 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:07,579 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:07,583 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:07,594 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:07,595 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kepriau.csv', 'wb')
+2023-12-01 10:03:07,597 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kepriau.csv', 'wb') -> 00000000
+2023-12-01 10:03:07,608 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:07,612 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kepriau.csv')
+2023-12-01 10:03:07,615 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:07,615 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:07,616 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:07,619 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jambi.csv HTTP/1.1" 200 259312
+2023-12-01 10:03:07,715 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:07,829 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:07,829 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:07,848 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:07,848 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:07,850 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:07,851 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:07,915 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:07,915 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:07,915 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:07,915 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:07,960 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:08,027 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:08,028 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:08,159 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:08,160 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:08,203 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:08,204 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:08,207 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:08,219 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:08,219 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jambi.csv', 'wb')
+2023-12-01 10:03:08,222 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jambi.csv', 'wb') -> 00000000
+2023-12-01 10:03:08,238 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:08,244 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jambi.csv')
+2023-12-01 10:03:08,247 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:08,247 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:08,248 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:08,251 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-bengkulu.csv HTTP/1.1" 200 261339
+2023-12-01 10:03:08,347 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:08,474 - paramiko.transport - DEBUG - starting thread (client mode): 0xd29b6230
+2023-12-01 10:03:08,474 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:08,492 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:08,492 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:08,495 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:08,495 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:08,495 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:08,495 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:08,495 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:08,496 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:08,560 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:08,561 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:08,561 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:08,561 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:08,609 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:08,677 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:08,677 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:08,806 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:08,806 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:08,851 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:08,851 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:08,855 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:08,866 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:08,866 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-bengkulu.csv', 'wb')
+2023-12-01 10:03:08,870 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-bengkulu.csv', 'wb') -> 00000000
+2023-12-01 10:03:08,887 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:08,893 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-bengkulu.csv')
+2023-12-01 10:03:08,896 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:08,897 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:08,898 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:08,903 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sumsel.csv HTTP/1.1" 200 457106
+2023-12-01 10:03:08,997 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:09,339 - paramiko.transport - DEBUG - starting thread (client mode): 0xd1cc44c0
+2023-12-01 10:03:09,339 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:09,359 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:09,359 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:09,361 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:09,362 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:09,425 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:09,425 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:09,425 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:09,426 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:09,472 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:09,539 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:09,539 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:09,672 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:09,672 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:09,715 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:09,715 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:09,719 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:09,731 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:09,731 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumsel.csv', 'wb')
+2023-12-01 10:03:09,734 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sumsel.csv', 'wb') -> 00000000
+2023-12-01 10:03:09,757 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:09,762 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sumsel.csv')
+2023-12-01 10:03:09,765 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:09,765 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:09,766 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:09,769 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-babel.csv HTTP/1.1" 200 112382
+2023-12-01 10:03:09,769 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:09,871 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:09,871 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:09,889 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:09,889 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:09,891 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:09,891 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:09,892 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:09,953 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:09,953 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:09,953 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:09,954 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:10,000 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:10,067 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:10,067 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:10,200 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:10,200 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:10,243 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:10,244 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:10,248 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:10,260 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:10,260 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-babel.csv', 'wb')
+2023-12-01 10:03:10,263 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-babel.csv', 'wb') -> 00000000
+2023-12-01 10:03:10,272 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:10,278 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-babel.csv')
+2023-12-01 10:03:10,282 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:10,282 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:10,283 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:10,285 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-lampung.csv HTTP/1.1" 200 458480
+2023-12-01 10:03:10,382 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:10,668 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:10,669 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:10,688 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:10,688 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:10,691 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:10,691 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:10,692 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:10,754 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:10,754 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:10,754 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:10,755 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:10,800 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:10,867 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:10,867 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:11,002 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:11,002 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:11,047 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:11,047 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:11,051 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:11,061 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:11,062 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-lampung.csv', 'wb')
+2023-12-01 10:03:11,065 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-lampung.csv', 'wb') -> 00000000
+2023-12-01 10:03:11,087 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:11,093 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-lampung.csv')
+2023-12-01 10:03:11,096 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:11,096 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:11,097 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:11,100 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jakarta.csv HTTP/1.1" 200 93212
+2023-12-01 10:03:11,186 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:11,186 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:11,196 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:11,206 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:11,206 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:11,208 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:11,209 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:11,209 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:11,266 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:11,267 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:11,267 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:11,267 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:11,312 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:11,379 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:11,379 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:11,525 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:11,526 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:11,571 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:11,571 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:11,574 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:11,586 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:11,587 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jakarta.csv', 'wb')
+2023-12-01 10:03:11,590 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jakarta.csv', 'wb') -> 00000000
+2023-12-01 10:03:11,599 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:11,604 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jakarta.csv')
+2023-12-01 10:03:11,607 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:11,607 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:11,608 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:11,633 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-banten.csv HTTP/1.1" 200 310100
+2023-12-01 10:03:11,710 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:11,912 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:11,912 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:11,932 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:11,932 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:11,934 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:11,935 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:11,998 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:11,998 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:11,998 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:11,999 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:12,045 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:12,113 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:12,113 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:12,247 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:12,247 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:12,291 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:12,291 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:12,295 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:12,308 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:12,308 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-banten.csv', 'wb')
+2023-12-01 10:03:12,310 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-banten.csv', 'wb') -> 00000000
+2023-12-01 10:03:12,328 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:12,333 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-banten.csv')
+2023-12-01 10:03:12,336 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:12,336 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:12,338 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:12,377 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jawabarat.csv HTTP/1.1" 200 1222762
+2023-12-01 10:03:12,437 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:13,558 - paramiko.transport - DEBUG - starting thread (client mode): 0xd1d0e200
+2023-12-01 10:03:13,558 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:13,578 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:13,578 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:13,580 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:13,581 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:13,581 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:13,641 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:13,641 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:13,641 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:13,642 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:13,689 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:13,756 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:13,756 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:13,885 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:13,885 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:13,931 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:13,931 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:13,935 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:13,946 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:13,947 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawabarat.csv', 'wb')
+2023-12-01 10:03:13,950 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawabarat.csv', 'wb') -> 00000000
+2023-12-01 10:03:14,001 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:14,008 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jawabarat.csv')
+2023-12-01 10:03:14,011 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:14,011 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:14,013 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:14,015 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jawatengah.csv HTTP/1.1" 200 1105430
+2023-12-01 10:03:14,111 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:14,941 - paramiko.transport - DEBUG - starting thread (client mode): 0xd977b2e0
+2023-12-01 10:03:14,941 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:14,960 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:14,960 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:14,962 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:14,962 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:14,962 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:14,962 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:14,962 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:14,963 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:15,027 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:15,027 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:15,027 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:15,028 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:15,073 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:15,140 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:15,140 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:15,272 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:15,272 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:15,315 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:15,315 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:15,319 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:15,330 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:15,331 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawatengah.csv', 'wb')
+2023-12-01 10:03:15,335 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawatengah.csv', 'wb') -> 00000000
+2023-12-01 10:03:15,382 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:15,386 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jawatengah.csv')
+2023-12-01 10:03:15,389 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:15,389 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:15,391 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:15,393 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jogyakarta.csv HTTP/1.1" 200 155599
+2023-12-01 10:03:15,489 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:15,528 - paramiko.transport - DEBUG - starting thread (client mode): 0xd1d56f80
+2023-12-01 10:03:15,528 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:15,547 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:15,547 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:15,549 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:15,550 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:15,550 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:15,550 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:15,550 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:15,550 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:15,616 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:15,616 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:15,616 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:15,616 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:15,660 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:15,728 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:15,729 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:15,867 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:15,867 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:15,911 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:15,911 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:15,915 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:15,925 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:15,925 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jogyakarta.csv', 'wb')
+2023-12-01 10:03:15,928 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jogyakarta.csv', 'wb') -> 00000000
+2023-12-01 10:03:15,940 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:15,947 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jogyakarta.csv')
+2023-12-01 10:03:15,950 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:15,950 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:15,951 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:15,966 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-jawatimur.csv HTTP/1.1" 200 1313897
+2023-12-01 10:03:16,050 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:17,101 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:17,101 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:17,124 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:17,124 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:17,126 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:17,126 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:17,126 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:17,126 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:17,127 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:17,189 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:17,190 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:17,190 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:17,190 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:17,237 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:17,304 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:17,304 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:17,433 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:17,433 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:17,479 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:17,479 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:17,483 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:17,495 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:17,495 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawatimur.csv', 'wb')
+2023-12-01 10:03:17,499 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-jawatimur.csv', 'wb') -> 00000000
+2023-12-01 10:03:17,550 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:17,554 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-jawatimur.csv')
+2023-12-01 10:03:17,556 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:17,556 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:17,557 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:17,560 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kalbar.csv HTTP/1.1" 200 340406
+2023-12-01 10:03:17,672 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:17,836 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2dd81c0
+2023-12-01 10:03:17,836 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:17,856 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:17,856 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:17,858 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:17,858 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:17,858 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:17,858 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:17,859 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:17,920 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:17,921 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:17,921 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:17,921 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:17,969 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:18,036 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:18,036 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:18,166 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:18,166 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:18,211 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:18,211 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:18,215 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:18,227 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:18,227 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalbar.csv', 'wb')
+2023-12-01 10:03:18,231 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalbar.csv', 'wb') -> 00000000
+2023-12-01 10:03:18,252 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:18,258 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kalbar.csv')
+2023-12-01 10:03:18,261 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:18,261 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:18,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:18,265 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kalteng.csv HTTP/1.1" 200 285797
+2023-12-01 10:03:18,361 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:18,502 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:18,503 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:18,523 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:18,523 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:18,525 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:18,526 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:18,590 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:18,591 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:18,591 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:18,591 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:18,637 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:18,704 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:18,705 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:18,835 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:18,835 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:18,879 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:18,879 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:18,883 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:18,894 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:18,894 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalteng.csv', 'wb')
+2023-12-01 10:03:18,898 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalteng.csv', 'wb') -> 00000000
+2023-12-01 10:03:18,915 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:18,920 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kalteng.csv')
+2023-12-01 10:03:18,923 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:18,923 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:18,924 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:18,926 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kaltim.csv HTTP/1.1" 200 203214
+2023-12-01 10:03:19,023 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:19,093 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:19,094 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:19,113 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:19,113 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:19,115 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:19,115 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:19,115 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:19,115 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:19,116 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:19,177 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:19,177 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:19,177 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:19,178 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:19,224 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:19,291 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:19,291 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:19,435 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:19,435 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:19,479 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:19,479 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:19,483 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:19,495 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:19,496 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kaltim.csv', 'wb')
+2023-12-01 10:03:19,499 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kaltim.csv', 'wb') -> 00000000
+2023-12-01 10:03:19,512 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:19,518 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kaltim.csv')
+2023-12-01 10:03:19,521 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:19,521 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:19,522 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:19,527 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kalsel.csv HTTP/1.1" 200 308101
+2023-12-01 10:03:19,621 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:19,788 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:19,789 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:19,809 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:19,809 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:19,811 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:19,812 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:19,874 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:19,875 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:19,875 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:19,875 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:19,921 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:19,988 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:19,989 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:20,116 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:20,116 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:20,159 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:20,159 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:20,163 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:20,174 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:20,174 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalsel.csv', 'wb')
+2023-12-01 10:03:20,177 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kalsel.csv', 'wb') -> 00000000
+2023-12-01 10:03:20,195 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:20,200 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kalsel.csv')
+2023-12-01 10:03:20,203 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:20,203 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:20,204 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:20,207 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-kaluta.csv HTTP/1.1" 200 101533
+2023-12-01 10:03:20,207 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:20,297 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:20,297 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:20,317 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:20,317 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:20,319 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:20,319 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:20,319 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:20,319 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:20,320 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:20,382 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:20,382 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:20,382 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:20,382 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:20,429 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:20,497 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:20,498 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:20,630 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:20,630 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:20,675 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:20,675 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:20,678 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:20,690 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:20,690 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kaluta.csv', 'wb')
+2023-12-01 10:03:20,694 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-kaluta.csv', 'wb') -> 00000000
+2023-12-01 10:03:20,703 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:20,708 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-kaluta.csv')
+2023-12-01 10:03:20,710 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:20,710 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:20,711 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:20,714 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-bali.csv HTTP/1.1" 200 176953
+2023-12-01 10:03:20,811 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:20,868 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c853c0
+2023-12-01 10:03:20,868 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:20,886 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:20,886 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:20,889 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:20,889 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:20,890 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:20,949 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:20,949 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:20,950 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:20,950 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:20,996 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:21,064 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:21,064 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:21,203 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:21,203 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:21,247 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:21,247 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:21,250 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:21,265 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:21,265 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-bali.csv', 'wb')
+2023-12-01 10:03:21,268 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-bali.csv', 'wb') -> 00000000
+2023-12-01 10:03:21,279 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:21,284 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-bali.csv')
+2023-12-01 10:03:21,287 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:21,287 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:21,288 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:21,292 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-ntb.csv HTTP/1.1" 200 236179
+2023-12-01 10:03:21,387 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:21,489 - paramiko.transport - DEBUG - starting thread (client mode): 0xd29b6230
+2023-12-01 10:03:21,490 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:21,513 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:21,513 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:21,516 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:21,517 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:21,577 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:21,578 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:21,578 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:21,578 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:21,625 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:21,692 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:21,692 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:21,819 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:21,819 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:21,863 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:21,863 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:21,869 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:21,877 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:21,877 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-ntb.csv', 'wb')
+2023-12-01 10:03:21,880 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-ntb.csv', 'wb') -> 00000000
+2023-12-01 10:03:21,895 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:21,898 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-ntb.csv')
+2023-12-01 10:03:21,901 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:21,901 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:21,902 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:21,905 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-ntt.csv HTTP/1.1" 200 614602
+2023-12-01 10:03:21,906 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:22,421 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2dd81c0
+2023-12-01 10:03:22,422 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:22,441 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:22,441 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:22,443 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:22,444 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:22,507 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:22,507 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:22,507 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:22,508 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:22,552 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:22,619 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:22,619 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:22,760 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:22,760 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:22,803 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:22,803 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:22,806 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:22,818 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:22,819 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-ntt.csv', 'wb')
+2023-12-01 10:03:22,822 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-ntt.csv', 'wb') -> 00000000
+2023-12-01 10:03:22,850 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:22,855 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-ntt.csv')
+2023-12-01 10:03:22,858 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:22,858 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:22,859 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:22,866 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sulut.csv HTTP/1.1" 200 335527
+2023-12-01 10:03:22,958 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:23,121 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2dd81c0
+2023-12-01 10:03:23,121 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:23,141 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:23,141 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:23,143 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:23,144 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:23,206 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:23,207 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:23,207 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:23,207 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:23,252 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:23,319 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:23,319 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:23,454 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:23,454 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:23,499 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:23,499 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:23,503 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:23,514 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:23,514 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulut.csv', 'wb')
+2023-12-01 10:03:23,517 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulut.csv', 'wb') -> 00000000
+2023-12-01 10:03:23,538 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:23,544 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sulut.csv')
+2023-12-01 10:03:23,547 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:23,547 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:23,548 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:23,551 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-gorontalo.csv HTTP/1.1" 200 144831
+2023-12-01 10:03:23,647 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:23,684 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c479d0
+2023-12-01 10:03:23,685 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:23,704 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:23,704 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:23,706 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:23,768 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:23,768 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:23,769 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:23,769 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:23,816 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:23,884 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:23,884 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:24,024 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:24,024 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:24,067 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:24,067 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:24,071 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:24,083 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:24,083 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-gorontalo.csv', 'wb')
+2023-12-01 10:03:24,087 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-gorontalo.csv', 'wb') -> 00000000
+2023-12-01 10:03:24,099 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:24,104 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-gorontalo.csv')
+2023-12-01 10:03:24,108 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:24,108 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:24,110 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:24,113 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sulteng.csv HTTP/1.1" 200 308910
+2023-12-01 10:03:24,208 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:24,364 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:24,365 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:24,386 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:24,386 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:24,388 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:24,449 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:24,450 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:24,450 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:24,450 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:24,497 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:24,565 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:24,565 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:24,700 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:24,700 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:24,743 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:24,743 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:24,747 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:24,757 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:24,757 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulteng.csv', 'wb')
+2023-12-01 10:03:24,761 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulteng.csv', 'wb') -> 00000000
+2023-12-01 10:03:24,779 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:24,783 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sulteng.csv')
+2023-12-01 10:03:24,786 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:24,786 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:24,787 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:24,797 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sulbar.csv HTTP/1.1" 200 138128
+2023-12-01 10:03:24,886 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:24,921 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:24,921 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:24,940 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:24,940 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:24,943 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:24,944 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:25,007 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:25,007 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:25,007 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:25,007 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:25,053 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:25,121 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:25,121 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:25,246 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:25,246 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:25,291 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:25,291 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:25,295 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:25,306 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:25,306 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulbar.csv', 'wb')
+2023-12-01 10:03:25,310 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulbar.csv', 'wb') -> 00000000
+2023-12-01 10:03:25,321 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:25,327 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sulbar.csv')
+2023-12-01 10:03:25,330 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:25,330 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:25,332 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:25,337 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sulsel.csv HTTP/1.1" 200 591847
+2023-12-01 10:03:25,430 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:25,823 - paramiko.transport - DEBUG - starting thread (client mode): 0xd2c85450
+2023-12-01 10:03:25,824 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:25,844 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:25,844 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:25,846 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:25,847 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:25,909 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:25,909 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:25,910 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:25,910 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:25,957 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:26,024 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:26,024 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:26,155 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:26,155 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:26,199 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:26,199 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:26,203 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:26,215 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:26,215 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulsel.csv', 'wb')
+2023-12-01 10:03:26,219 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sulsel.csv', 'wb') -> 00000000
+2023-12-01 10:03:26,250 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:26,256 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sulsel.csv')
+2023-12-01 10:03:26,259 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:26,259 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:26,261 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:26,274 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-sultenggara.csv HTTP/1.1" 200 390840
+2023-12-01 10:03:26,359 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:26,589 - paramiko.transport - DEBUG - starting thread (client mode): 0xffe5dbd0
+2023-12-01 10:03:26,590 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:26,609 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:26,609 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:26,611 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:26,612 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:26,612 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:26,612 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:26,612 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:26,612 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:26,675 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:26,675 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:26,676 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:26,676 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:26,721 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:26,788 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:26,789 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:26,931 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:26,931 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:26,975 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:26,975 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:26,979 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:26,990 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:26,990 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sultenggara.csv', 'wb')
+2023-12-01 10:03:26,993 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-sultenggara.csv', 'wb') -> 00000000
+2023-12-01 10:03:27,013 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:27,018 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-sultenggara.csv')
+2023-12-01 10:03:27,022 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:27,022 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:27,023 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:27,026 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-maluku.csv HTTP/1.1" 200 238852
+2023-12-01 10:03:27,122 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:27,287 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:27,287 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:27,307 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:27,307 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:27,309 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:27,310 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:27,310 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:27,310 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:27,310 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:27,375 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:27,376 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:27,376 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:27,376 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:27,421 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:27,489 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:27,489 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:27,611 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:27,611 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:27,656 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:27,656 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:27,661 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:27,673 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:27,673 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-maluku.csv', 'wb')
+2023-12-01 10:03:27,676 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-maluku.csv', 'wb') -> 00000000
+2023-12-01 10:03:27,691 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:27,695 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-maluku.csv')
+2023-12-01 10:03:27,698 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:27,698 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:27,699 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:27,704 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-malut.csv HTTP/1.1" 200 226023
+2023-12-01 10:03:27,798 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:27,884 - paramiko.transport - DEBUG - starting thread (client mode): 0xd29b6230
+2023-12-01 10:03:27,885 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:27,903 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:27,903 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:27,905 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:27,905 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:27,905 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:27,905 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:27,905 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:27,906 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:27,971 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:27,971 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:27,971 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:27,971 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:28,017 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:28,084 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:28,085 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:28,227 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:28,227 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:28,271 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:28,271 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:28,276 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:28,287 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:28,287 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-malut.csv', 'wb')
+2023-12-01 10:03:28,290 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-malut.csv', 'wb') -> 00000000
+2023-12-01 10:03:28,308 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:28,314 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-malut.csv')
+2023-12-01 10:03:28,318 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:28,318 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:28,320 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:28,324 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-papua.csv HTTP/1.1" 200 684700
+2023-12-01 10:03:28,418 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:28,894 - paramiko.transport - DEBUG - starting thread (client mode): 0xd29b5120
+2023-12-01 10:03:28,895 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:28,913 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:28,913 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:28,915 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:28,978 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:28,979 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:28,979 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:28,979 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:29,024 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:29,092 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:29,092 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:29,218 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:29,218 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:29,264 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:29,264 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:29,268 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:29,279 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:29,279 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-papua.csv', 'wb')
+2023-12-01 10:03:29,282 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-papua.csv', 'wb') -> 00000000
+2023-12-01 10:03:29,316 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:29,321 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-papua.csv')
+2023-12-01 10:03:29,324 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:29,324 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:29,325 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 202.90.198.220:80
+2023-12-01 10:03:29,329 - urllib3.connectionpool - DEBUG - http://202.90.198.220:80 "GET /MEWS/CSV/kecamatanforecast-papuabarat.csv HTTP/1.1" 200 342657
+2023-12-01 10:03:29,424 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:29,608 - paramiko.transport - DEBUG - starting thread (client mode): 0xdb9f1c90
+2023-12-01 10:03:29,609 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.3.1
+2023-12-01 10:03:29,628 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.3
+2023-12-01 10:03:29,628 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_8.9p1)
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, sntrup761x25519-sha512@openssh.com, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2023-12-01 10:03:29,631 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - client lang: <none>
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - server lang: <none>
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - kex follows: False
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - Compression: none
+2023-12-01 10:03:29,632 - paramiko.transport - DEBUG - === End of kex handshake ===
+2023-12-01 10:03:29,694 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2023-12-01 10:03:29,694 - paramiko.transport - DEBUG - Switch to new keys ...
+2023-12-01 10:03:29,695 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com,webauthn-sk-ecdsa-sha2-nistp256@openssh.com', 'publickey-hostbound@openssh.com': b'0'}
+2023-12-01 10:03:29,695 - paramiko.transport - DEBUG - Attempting password auth...
+2023-12-01 10:03:29,741 - paramiko.transport - DEBUG - userauth is OK
+2023-12-01 10:03:29,808 - paramiko.transport - INFO - Authentication (password) successful!
+2023-12-01 10:03:29,808 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2023-12-01 10:03:29,943 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2023-12-01 10:03:29,943 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2023-12-01 10:03:29,987 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2023-12-01 10:03:29,987 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2023-12-01 10:03:29,991 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2023-12-01 10:03:30,003 - paramiko.transport.sftp - INFO - [chan 0] Opened sftp connection (server version 3)
+2023-12-01 10:03:30,003 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-papuabarat.csv', 'wb')
+2023-12-01 10:03:30,006 - paramiko.transport.sftp - DEBUG - [chan 0] open(b'present_weather/kecamatanforecast-papuabarat.csv', 'wb') -> 00000000
+2023-12-01 10:03:30,024 - paramiko.transport.sftp - DEBUG - [chan 0] close(00000000)
+2023-12-01 10:03:30,030 - paramiko.transport.sftp - DEBUG - [chan 0] stat(b'present_weather/kecamatanforecast-papuabarat.csv')
+2023-12-01 10:03:30,033 - paramiko.transport.sftp - INFO - [chan 0] sftp session closed.
+2023-12-01 10:03:30,033 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2023-12-01 10:03:30,034 - asyncio - DEBUG - Using selector: EpollSelector
+2023-12-01 10:03:30,038 - paramiko.transport - DEBUG - EOF in transport thread
+2023-12-01 10:03:31,499 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): radar.bmkg.go.id:8060
+2023-12-01 10:03:31,511 - urllib3.connectionpool - DEBUG - https://radar.bmkg.go.id:8060 "GET /getLatestLD?typeData=1 HTTP/1.1" 200 62
+2023-12-01 10:03:31,513 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): radar.bmkg.go.id:8060
+2023-12-01 10:03:31,533 - urllib3.connectionpool - DEBUG - https://radar.bmkg.go.id:8060 "GET /getRadarGeotif?token=19387e71e78522ae4172ec0fda640983b8438c9cfa0ca571623cb69d8327&radar=amandemenForecast&type=latest HTTP/1.1" 200 90
+2023-12-01 10:03:31,533 - rasterio.env - DEBUG - Entering env context: <rasterio.env.Env object at 0x7f3bd1afce50>
+2023-12-01 10:03:31,534 - rasterio.env - DEBUG - Starting outermost env
+2023-12-01 10:03:31,534 - rasterio.env - DEBUG - No GDAL environment exists
+2023-12-01 10:03:31,534 - rasterio.env - DEBUG - New GDAL environment <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> created
+2023-12-01 10:03:31,537 - rasterio._filepath - DEBUG - Installing FilePath filesystem handler plugin...
+2023-12-01 10:03:31,537 - rasterio._env - DEBUG - GDAL data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/gdal_data'.
+2023-12-01 10:03:31,537 - rasterio._env - DEBUG - PROJ data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/proj_data'.
+2023-12-01 10:03:31,537 - rasterio._env - DEBUG - Started GDALEnv: self=<rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:31,537 - rasterio.env - DEBUG - Entered env context: <rasterio.env.Env object at 0x7f3bd1afce50>
+2023-12-01 10:03:31,538 - rasterio._base - DEBUG - Sharing flag: 0
+2023-12-01 10:03:31,733 - rasterio._base - DEBUG - Nodata success: 1, Nodata value: nan
+2023-12-01 10:03:31,733 - rasterio._base - DEBUG - Dataset <open DatasetReader name='https://radar.bmkg.go.id/raster/radarsatelit_202312011000.tif' mode='r'> is started.
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Exiting env context: <rasterio.env.Env object at 0x7f3bd1afce50>
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Cleared existing <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> options
+2023-12-01 10:03:31,734 - rasterio._env - DEBUG - Stopped GDALEnv <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Exiting outermost env
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Exited env context: <rasterio.env.Env object at 0x7f3bd1afce50>
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Entering env context: <rasterio.env.Env object at 0x7f3bd1d7b760>
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - Starting outermost env
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - No GDAL environment exists
+2023-12-01 10:03:31,734 - rasterio.env - DEBUG - New GDAL environment <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> created
+2023-12-01 10:03:31,734 - rasterio._env - DEBUG - GDAL data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/gdal_data'.
+2023-12-01 10:03:31,735 - rasterio._env - DEBUG - PROJ data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/proj_data'.
+2023-12-01 10:03:31,735 - rasterio._env - DEBUG - Started GDALEnv: self=<rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:31,735 - rasterio.env - DEBUG - Entered env context: <rasterio.env.Env object at 0x7f3bd1d7b760>
+2023-12-01 10:03:31,735 - rasterio.env - DEBUG - Got a copy of environment <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> options
+2023-12-01 10:03:31,735 - rasterio.env - DEBUG - Entering env context: <rasterio.env.Env object at 0x7f3bd08790f0>
+2023-12-01 10:03:31,735 - rasterio.env - DEBUG - Got a copy of environment <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> options
+2023-12-01 10:03:31,735 - rasterio.env - DEBUG - Entered env context: <rasterio.env.Env object at 0x7f3bd08790f0>
+2023-12-01 10:03:31,735 - rasterio._base - DEBUG - Sharing flag: 0
+2023-12-01 10:03:31,736 - rasterio._base - DEBUG - Nodata success: 1, Nodata value: nan
+2023-12-01 10:03:31,736 - rasterio._base - DEBUG - Dataset <open DatasetReader name='https://radar.bmkg.go.id/raster/radarsatelit_202312011000.tif' mode='r'> is started.
+2023-12-01 10:03:31,736 - rasterio.env - DEBUG - Exiting env context: <rasterio.env.Env object at 0x7f3bd08790f0>
+2023-12-01 10:03:31,736 - rasterio.env - DEBUG - Cleared existing <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> options
+2023-12-01 10:03:31,736 - rasterio._env - DEBUG - Stopped GDALEnv <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:31,736 - rasterio.env - DEBUG - No GDAL environment exists
+2023-12-01 10:03:31,736 - rasterio.env - DEBUG - New GDAL environment <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> created
+2023-12-01 10:03:31,737 - rasterio._env - DEBUG - GDAL data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/gdal_data'.
+2023-12-01 10:03:31,737 - rasterio._env - DEBUG - PROJ data found in package: path='/home/metpublic/PYTHON_VENV/present_weather/lib/python3.10/site-packages/rasterio/proj_data'.
+2023-12-01 10:03:31,737 - rasterio._env - DEBUG - Started GDALEnv: self=<rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:31,737 - rasterio.env - DEBUG - Exited env context: <rasterio.env.Env object at 0x7f3bd08790f0>
+2023-12-01 10:03:31,753 - rasterio._io - DEBUG - Output nodata value read from file: nan
+2023-12-01 10:03:31,753 - rasterio._io - DEBUG - Output nodata values: [nan]
+2023-12-01 10:03:31,753 - rasterio._io - DEBUG - all_valid: False
+2023-12-01 10:03:31,753 - rasterio._io - DEBUG - mask_flags: ([<MaskFlags.nodata: 8>],)
+2023-12-01 10:03:31,754 - rasterio._io - DEBUG - Jump straight to _read()
+2023-12-01 10:03:31,754 - rasterio._io - DEBUG - Window: Window(col_off=0, row_off=0, width=10215, height=3792)
+2023-12-01 10:03:31,754 - rasterio._io - DEBUG - IO window xoff=0.0 yoff=0.0 width=10215.0 height=3792.0
+2023-12-01 10:03:32,323 - rasterio.env - DEBUG - Exiting env context: <rasterio.env.Env object at 0x7f3bd1d7b760>
+2023-12-01 10:03:32,323 - rasterio.env - DEBUG - Cleared existing <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0> options
+2023-12-01 10:03:32,323 - rasterio._env - DEBUG - Stopped GDALEnv <rasterio._env.GDALEnv object at 0x7f3bd1afc4f0>.
+2023-12-01 10:03:32,323 - rasterio.env - DEBUG - Exiting outermost env
+2023-12-01 10:03:32,323 - rasterio.env - DEBUG - Exited env context: <rasterio.env.Env object at 0x7f3bd1d7b760>
+2023-12-01 10:09:51,713 - root - INFO - Total elapsed time: 0:06:48.898526

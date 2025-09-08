@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMKG - AMANCA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" /> -->
+    <!-- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript">function showLocalTime(a, b, c, d) { if (document.getElementById && document.getElementById(a)) { this.container = document.getElementById(a), this.displayversion = d; var e = "server-php" == b ? '<? print date("F d, Y H:i:s", time())?>' : "server-ssi" == b ? '<!--#config timefmt="%B %d, %Y %H:%M:%S"--><!--#echo var="DATE_LOCAL" -->' : "6/16/2021 10:12:05 PM"; this.localtime = this.serverdate = new Date(e), this.localtime.setTime(this.serverdate.getTime() + 60 * c * 1e3), this.updateTime(), this.updateContainer() } } function formatField(a, b) { if ("undefined" != typeof b) { var c = a > 12 ? a - 12 : a; return 0 == c ? 12 : c } return a <= 9 ? "0" + a : a } var minggutxt = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"], weekdaystxt = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], bulantxt = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"], monthstxt = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; showLocalTime.prototype.updateTime = function () { var a = this; this.localtime.setSeconds(this.localtime.getSeconds() + 1), setTimeout(function () { a.updateTime() }, 1e3) }, showLocalTime.prototype.updateContainer = function () { var a = this; if ("long" == this.displayversion) this.container.innerHTML = this.localtime.toLocaleString(); else { var b = this.localtime.getHours(), c = this.localtime.getMinutes(), d = this.localtime.getSeconds(), k = (this.localtime.getDate(), this.localtime.getUTCDate(), minggutxt[this.localtime.getDay()], bulantxt[this.localtime.getMonth()], weekdaystxt[this.localtime.getUTCDay()], monthstxt[this.localtime.getUTCMonth()], b + 1); k >= 24 && (k -= 24); var l = b + 2; l >= 24 && (l -= 24); var m = b - 7; m < 0 && (m += 24); this.container.innerHTML = "<span class='hari-digit hidden-sm'><a href='http://jam.bmkg.go.id/' target='_blank'>Standar Waktu Indonesia</a> </span><span class='FontDigit'>" + formatField(b) + ":" + formatField(c) + ":" + formatField(d) + " WIB / </span><span class='FontDigit'>" + formatField(m) + ":" + formatField(c) + ":" + formatField(d) + " UTC</span>" } setTimeout(function () { a.updateContainer() }, 1e3) };
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="js/leaflet.js"></script>
+    <link rel="stylesheet" href="css/leaflet.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="shortcut icon" href="img/ico/favicon-96x96.png" type="image/x-icon">
+    <link rel="icon" href="img/ico/favicon-96x96.png" type="image/x-icon">
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="data/borneo.js"></script>
+
+    <script src="js/moment.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/moment-timezone-with-data.js"></script>
+
+    <script src="js/L.Control.MousePosition.js"></script>
+    <link rel="stylesheet" href="css/L.Control.MousePosition.css">
+    <script src="js/Leaflet.BigImage.js"></script>
+    <link rel="stylesheet" href="css/Leaflet.BigImage.css">
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jput.min.js"></script>
+    <script type="text/javascript"></script>
+
+
+
+
+
+
+
+    <style>
+        /* <!-- ================================================== CSS-LABEL ========================================================= -->
+<!-- ================================================== SIDEBAR ========================================================= --> */
+
+
+        /* ================================================== CSS-HEADER ========================================================= */
+
+        .header {
+            background: rgb(113, 164, 190);
+            border-bottom: solid 10px;
+            padding: 0;
+            width: 100%;
+            height: 130px;
+            position: fixed;
+            z-index: 1500;
+            margin-left: 0;
+            margin-right: 0;
+
+
+        }
+
+        .navbar {
+            width: 100%;
+            background-image: url('img/background_header.svg');
+
+        }
+
+        @media (max-width: 990px) {
+
+            .navbar {
+                width: 100%;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url('img/background_header_0.svg');
+
+
+            }
+
+            .navbar-logo {
+                display: block;
+                max-height: 80px;
+                margin-right: 20px;
+            }
+
+        }
+
+        @media (min-width: 990px) {
+
+            .navbar {
+                width: 100%;
+                height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url('img/background_header.svg');
+
+
+            }
+
+            .navbar-logo {
+                display: none;
+            }
+
+        }
+
+
+
+        /* ================================================== CSS-BODY CONTENT ========================================================= */
+
+
+        .body-content {
+            top: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 1100px;
+            background: linear-gradient(to top, #04160c, #010b1a);
+
+
+        }
+
+        @media (min-width: 600px) and (max-width: 1500px){
+            .body-content {
+                font: size 1.5em;
+                height: 1500px;
+            }
+        }
+
+
+        @media (max-width: 599px) {
+            .body-content {
+                font: size 1.5em;
+                height: 2100px;
+            }
+        }
+
+
+       
+        .date_wib {
+            font-size: 15px;
+            color: rgb(255, 232, 197);
+            float: right;
+            padding: 5px
+        }
+
+        .date_utc {
+            font-size: 15px;
+            color: rgb(253, 253, 253);
+            float: right;
+            padding: 5px
+        }
+
+        @media (max-width: 1200px) {
+
+            .navbar-toggler {
+                background-color: rgb(154, 238, 255);
+                margin-left: auto;
+
+            }
+
+
+            .date_wib {
+                font-size: 0.8em;
+                font-weight: bold;
+                padding: 0px;
+                color: rgb(253, 253, 253);
+                /* float:right */
+                display: none;
+
+
+            }
+
+
+            .date_utc {
+                font-size: 0.7em;
+                color: rgb(90, 233, 85);
+                display: none;
+
+            }
+
+        }
+
+        /* ================================================== CSS-FOOTER ========================================================= */
+
+        .footer {
+            background: rgb(8, 8, 8);
+            height: 80px;
+            width: 100%;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            top: 0px
+        }
+
+        .text-footer {
+            margin: 0px 0;
+            padding: 0px;
+            color: rgb(255, 255, 255);
+
+
+        }
+
+
+        /* ================================================== CSS-CONTAINER ========================================================= */
+
+        .container {
+            padding-top: 150px;
+            /* margin-left: 0;
+            margin-right: 0; */
+            max-width: 1200px;
+            background-color: none;
+            position: relative;
+            color: rgb(255, 255, 255);
+            text-align: justify;
+
+        }
+
+        .display-6 {
+
+            position: relative;
+            object-position: center;
+            text-align: center;
+            font-size: x-large;
+
+        }
+
+
+        .lead {
+
+            position: relative;
+            object-position: center;
+            text-align: center;
+
+
+        }
+
+        @media (min-width: 1000px) and (max-width: 1500px) {
+            .container {
+                /* padding-top: 150px; */
+                /* margin-left: 0;
+            margin-right: 0; */
+                max-width: 800px;
+
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 1000px) {
+            .container {
+                /* padding-top: 150px; */
+                /* margin-left: 0;
+            margin-right: 0; */
+                max-width: 600px;
+
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                /* padding-top: 150px; */
+                /* margin-left: 0;
+            margin-right: 0; */
+                max-width: 400px;
+
+            }
+        }
+
+
+
+
+        .jumbotron {
+            background: url("http://gdurl.com/7azZ");
+            background-size: cover;
+            height: 1000px;
+        }
+
+
+        ul.makanan {
+            list-style-type: square;
+            /* list dengan bentuk square */
+        }
+
+
+        .nav-item {
+            border: 2px solid transparent;
+            border-radius: 80px;
+            padding: 0px 10px;
+            display: inline-block;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .nav-item.active {
+            border: 2px solid #acffff; /* Warna border saat aktif dan saat dihover */
+            background-color: transparent; /* Latar belakang transparan saat dihover */
+        }
+
+        .nav-item:hover {
+            background-color: #bdbdbd3f;
+        }
+
+        .nav-item .nav-link {
+            color: #acffff; /* Warna teks yang sama dengan warna border */
+            text-decoration: none;
+        }
+
+
+        
+    </style>
+</head>
+
+<!-- ================================================== ISI LAMAN ========================================================= -->
+<!-- ================================================== ISI LAMAN ========================================================= -->
+
+
+<body>
+
+    <div class="header">
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"
+            style="background:linear-gradient(to bottom,#868686, #ffffff,#ffffff,#ffffff, #868686)">
+             -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <img src="img/logobmkg.svg" alt="" width="50" height="90">
+
+                    <!-- <img src="img/logobib.svg" alt="" width="120" height="70"> -->
+
+                </a>
+                <img class="navbar-logo" src="img/logo_amanca.svg" alt="Logo">
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                &emsp;
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item" >
+                            <a class="nav-link" style="color: #acffff;" href="https://publik.bmkg.go.id/amandemen/">Map Interactive</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: #acffff;" href="https://publik.bmkg.go.id/amandemen/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #acffff;" href="https://publik.bmkg.go.id/contact.html">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <b><a class="nav-link dropdown-toggle" target="_blank" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Link Info Cuaca
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark"
+                                    aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li><a class="dropdown-item"
+                                            href="https://maritim.bmkg.go.id/area/pelayanan?kode=M.01"
+                                            target="_blank">Cuaca Maritim</a></li>
+                                </ul>
+                            </b>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+                <p>
+                    <b><span id="date_wib" class="date_wib"></span></b>
+                    <br>
+                    <span id="date_utc" class="date_utc"></span>
+                </p>
+            </div>
+
+        </nav>
+
+
+
+
+    </div>
+    <!-- </nav> -->
+    <!-- <div class="wrap">
+
+        <div class="header">
+            <div class="row">
+                <div class="col-xs-12"></div>
+                <img alt="SPARTAN" src="img/header_fdrs_SPARTAN10.png" height="80" width="1348" />
+            </div>
+        </div> -->
+
+
+
+    <div class="row">
+        <div class="col-sm-4 col-xs-12"></div>
+
+        <div class="body-content">
+            div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-6" style="color: rgb(173, 223, 248);">TENTANG AMANDEMEN PRAKIRAAN CUACA</h1>
+                <p style="color: rgb(214, 214, 214)">Website ini merupakan pilot project untuk memonitoring amandemen prakiraan cuaca meliputi 34 Provinsi seluruh Indonesia
+                    <!-- <ol style="list-style-type: disc; margin-left: 20px; padding-left: 0;">
+                        <li>Provinsi Banten</li>
+                        <li>Provinsi DKI Jakarta</li>
+                        <li>Provinsi Jawa Barat</li>
+                    </ol> -->
+                    <br>
+                <p style="color: rgb(214, 214, 214)">Amandemen ini meliputi dua bagian  :
+                    <br>
+                <ol style="color: rgb(163, 191, 196)">
+                    <li>Present Weather yaitu Prakiraan Cuaca dengan perubahan secara realtime
+                    </li>
+                    <li>
+                        Prakiraan Cuaca NDF (National Digital Forecast) dengan durasi 1 jam pada d0 (Hari Ini) - d1 (Besok), sedangkan untuk dua hingga tiga hari kedepan dengan interval waktu 3  - 6 jam 
+
+                    </li>
+                </ol>
+                <p style="color: rgb(214, 214, 214)">Pilot Project ini melibatkan beberapa anggota dari pusat meteo publik dengan susunan tim sebagai berikut :
+                    <title>Susunan Tim Pengembangan Amandemen Forecast Otomatis Pusat Meteorologi Publik</title>
+                    <h6>Susunan Tim Pengembangan Amandemen Forecast Otomatis Pusat Meteologi Publik</h6>
+                    <p>I. Pengarah: Plt. Kepala Pusat Meteorologi Publik</p>
+                    <p>II. Ketua Tim: Dr. Agie Wandala Putra, M.Sc</p>
+                    <p>III. Anggota</p>
+                    <ol>
+                        <li>Drs. Achmad Sasmito</li>
+                        <li>Alpon Sepriando</li>
+                        <li>Zainal Abidin</li>
+                        <li>Achmad Rifani</li>
+                        <li>Nanda Alfuadi</li>
+                        <li>Tomi Ilham Reza Pahlewi</li>
+                        <li>Nur Rahmat Jatmiko</li>
+                        <li>Abdullah Ali</li>
+                        <li>Adinda Dara Vahada</li>
+                        <li>Bony Septian Pandjaitan</li>
+                        <li>Akhmad Fahim</li>
+                        <li>Agita Vivi Wijayanti</li>
+                        <li>Imaduddin Salma Faalih</li>
+                    </ol>
+                </p>
+                <br>
+                <p class="lead">
+                    <a class="btn btn-outline-warning" href="https://publik.bmkg.go.id/amandemen/" role="button"> Amandemen Cuaca</a> &emsp; &emsp;
+                    
+                </p>
+             
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <!--===================================================== FOOTER ==================================================================  -->
+
+    <div class="row">
+        <div class="col-sm-4 col-xs-12"></div>
+        <div class="footer">
+            <br>
+            <i>
+
+                <p class="text-footer">&copy; Copyright Pusat Meteorologi Publik - BMKG 2022</p>
+
+
+            </i>
+
+        </div>
+    </div>
+
+    <!-- <iframe src="https://spartan.bmkg.go.id/blog/" width="100%" height="600px" frameborder="0"></iframe> -->
+</body>
+
+<!--===================================================== SCRIPT ==================================================================  -->
+<!--================================================= PETA INTERACTIVE ============================================================  -->
+
+
+<!--================================================= GRAFIK OPTION ============================================================  -->
+
+<script>
+
+    moment.locale('id')
+    function update() {
+        $('#date_wib').html(moment().add(1, 'hours').format('dddd, Do/MMMM/YYYY, LTS [WITA]'));
+        $('#date_utc').html(moment.utc().format('dddd, Do/MMMM/YYYY, LTS [UTC]'));
+    }
+
+
+    setInterval(update, 1000);
+
+
+
+
+
+</script>
+</body>
+
+</html>
